@@ -1,0 +1,216 @@
+@import url('https://abbie.github.io/discord-css/import.css');
+
+:root {
+    --\\--hide-profile-effects: true;
+    --\\--hide-avatar-decorations: true;
+    --\\--hide-server-boost-goal: true;
+    --\\--compact-server-list: true;
+}
+
+/* Nameplates hidden */
+.container__4bbc6 {
+  display: none !important;
+}
+
+/* Hide help button */
+a[href="https://support.discord.com/"] {
+  display: none !important;
+}
+
+/* Hide "Notification Settings" */
+.toolbar__9293f > .iconWrapper__9293f[aria-label="Notification Settings"] {
+    display: none;
+}
+
+/* Hide "Threads" */
+.toolbar__9293f > .iconWrapper__9293f[aria-label="Threads"] {
+    display: none;
+}
+
+/* Clan tags */
+.chipletContainerInner__10651 > .text__10651 > .tagText__10651 {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 0;
+  will-change: max-width, margin;
+  transition: max-width 0.5s cubic-bezier(0.34, 1.56, 0.64, 1),
+              margin 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.chipletContainerInner__10651:hover > .text__10651 > .tagText__10651 {
+  max-width: 20ch;
+  margin-right: .3ch;
+  transition-delay: 0.08s;
+}
+
+.chipletContainerInner__10651 > .text__10651 > img.badge__10651 {
+  margin-right: 0;
+  transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1),
+              margin 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.chipletContainerInner__10651:hover > span > img.badge__10651 {
+  transform: rotateZ(360deg);
+  margin-right: .6ch;
+  transition-delay: 0.08s;
+}
+
+.chipletContainerInner__10651 {
+  position: relative;
+  display: inline-block;
+  background-color: var(--background-mod-subtle);
+  padding: 0 3px;
+  margin-left: 3;
+}
+
+.chipletContainerInner__10651:hover ~ .tagText__10651 {
+  display: block;
+  clear: both;
+  margin-top: .5ch;
+}
+
+/* */
+
+/* Hide gift btn in chat */
+div[aria-label="Send a gift"] {
+  display: none !important;
+}
+
+/* Hide gift btn in chat */
+div:has(> div[aria-label="Open sticker picker"]) {
+  display: none !important;
+}
+
+div:has(> div[aria-label="Help"]) {
+  display: none !important;
+}
+
+button[aria-label="Noise Suppression powered by Krisp"] {
+  display: none !important;
+}
+
+.button__85643.iconWrapper__9293f.clickable__9293f[aria-label="Help"] {
+  display: none !important;
+}
+
+.pill__1f388.wrapper__58105 {
+  display: none !important;
+}
+
+/* Boost bar hide */
+.container__0d0f9.containerWithMargin__0d0f9 { display: none !important; }
+
+/* Target the sidebar container */
+.stack_dbd263 {
+    padding-top: 2px; /* adjust the value to move down */
+}
+
+/* Reply bar fix */
+.stackedBars__74017 {
+  transform: translateY(-5px) !important; /* move up */
+}
+
+.panel__5dec7.activityPanel__5e434 {
+  transform: translateY(-10px);
+}
+
+.perksDemoContainer__5dec7 {
+  display: none !important;
+}
+
+li:has(> div > a[data-list-item-id*="library"]),
+li:has(> div > a[data-list-item-id*="nitro"]),
+li:has(> div > a[data-list-item-id*="shop"])  {
+    display: none !important;
+}
+
+ul[data-list-id="guildsnav"] > div > div > div:nth-last-of-type(2),
+ul[data-list-id="guildsnav"] > div > div > div:nth-last-of-type(3) {
+  display: none !important;
+}
+
+.markup__75297.editor__1b31f.slateTextArea_ec4baf.placeholder__1b31f {
+  transform: translateY(3px);
+}
+
+.button_e131a9.buttonColor_e131a9.button__201d5.lookFilled__201d5.colorBrand__201d5.sizeMedium__201d5.fullWidth__201d5.grow__201d5.button_e131a9 {
+  display: none !important;
+}
+
+.markup__75297.editor__1b31f.slateTextArea_ec4baf {
+  position: relative;
+  margin-top: 4px
+}
+
+.button_e6e74f.button__201d5.lookBlank__201d5.colorBrand__201d5.grow__201d5 {
+  display: none;
+}
+
+.buttons__74017 {
+  position: relative;
+  margin-top: 4px;
+}
+
+.textArea__74017 {
+  position: relative; 
+  margin-top: -2px;
+}
+
+.buttons__74017 {
+  transform: translateY(-2px);
+}
+
+
+.actionButtons_e131a9 {
+  display: none;
+}
+
+.rtcConnectionStatusConnected__06d62.rtcConnectionStatusLabel__06d62.hoverableStatus_cdcd10.hoverRoll__0263c {
+  display: none;
+}
+
+.toolbar__9293f {
+  position: relative;
+  transform: translateX(40px);
+}
+
+/*  */
+
+.headerContainer__095fe {
+  display: none;
+}
+
+/* hide the default text */
+.default__0263c {
+  display: none !important;
+}
+
+/* force hovered text to always be visible */
+.hovered__0263c {
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.panelTitleContainer__37e49 {
+  transform: translateY(8px) translateX(10px);
+}
+
+/* Remove goofy "Add Emoji" in emoji picker */
+div[class*="emojiPicker"] > div[class*="header"] > button:last-of-type {
+  display: none !important;
+}
+
+[aria-label="Input Options"] {
+  display: none !important;
+}
+
+[aria-label="Output Options"] {
+  display: none !important;
+}
+
+/* hide checkpoint */
+div[aria-label="Checkpoint"] {
+  display: none;
+}
